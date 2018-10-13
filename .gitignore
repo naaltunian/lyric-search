@@ -10,7 +10,7 @@
 /build
 
 #dev key
-/Components/config.js
+src/Components/config.js
 
 # misc
 .DS_Store
