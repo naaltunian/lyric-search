@@ -14,7 +14,7 @@ class Search extends React.Component {
 
     trackSubmit = (e) => {
         e.preventDefault();
-        axios.get(`https://cors-anywhere.herokuapp.com/http://api.musixmatch/ws/1.1/track.search?q_track=${this.state.trackTitle}&page_size=10&page=1&s_track_rating=desc&apikey=${key}`)
+        axios.get(`https://cors-anywhere.herokuapp.com/http://api.musixmatch.com/ws/1.1/track.search?q_track=${this.state.trackTitle}&page_size=10&page=1&s_track_rating=desc&apikey=${key}`)
         .then(res => {
             console.log(res.date);
         })
